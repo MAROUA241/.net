@@ -24,6 +24,7 @@ namespace Messaging.Infrastructure
                 .Where(x => x.OwnerId.Equals(userId))
                 .OrderByDescending(x => x.PublishDate)
                 .Take(i);
+            
         }
     }
 }
